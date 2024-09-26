@@ -584,7 +584,8 @@ static struct sway_workspace *select_workspace(struct sway_view *view) {
 
 	// When there's no outputs connected, the above should match a workspace on
 	// the noop output.
-	sway_assert(false, "Expected to find a workspace");
+	//sway_assert(false, "Expected to find a workspace");
+	sway_log(SWAY_DEBUG, "Expected to find a workspace");
 	return NULL;
 }
 

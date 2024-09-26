@@ -253,7 +253,7 @@ void arrange_workspace(struct sway_workspace *workspace) {
 	if (config->reloading) {
 		return;
 	}
-	if (!workspace->output) {
+	if (!workspace || !workspace->output) {
 		// Happens when there are no outputs connected
 		return;
 	}
